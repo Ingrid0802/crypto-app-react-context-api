@@ -1,0 +1,62 @@
+.box-filter input {
+  height: 3em;
+  border: none;
+  padding: 0.5em;
+}
+
+.currency-label {
+  background: #3a5f1e;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.currency-btn {
+  display: inline-block;
+  margin-left: 0.5em;
+  background: transparent;
+  border: none;
+  color: #518529;
+  text-align: center;
+  height: 3em;
+}
+
+@media (min-width: 1670px) {
+  .box-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1670px) {
+  .box-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .box-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .box-filter input {
+    height: 3em;
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .currency-label {
+    display: none;
+  }
+  .currency-btn {
+    display: none;
+  }
+
+  .currecny-filter-container {
+    display: flex;
+    align-items: center;
+  }
+}

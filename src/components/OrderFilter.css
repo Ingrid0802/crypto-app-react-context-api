@@ -1,0 +1,44 @@
+.order-filter {
+  margin-top: 5em;
+}
+
+.sortby {
+  height: 2.7em;
+  border: none;
+  padding: 0.5em;
+  background-color: transparent;
+  border: 1px solid #292727;
+  color: white;
+  padding-left: 0.5em;
+  font-size: 1em;
+}
+
+.sort-span {
+  color: white;
+  padding: 0.6rem 1rem;
+  background: #3c631f;
+}
+
+option {
+  border: none;
+  background-color: #222121;
+}
+
+select option:checked {
+  background: #413e3e -webkit-linear-gradient(bottom, #413e3e 0%, #413e3e 100%);
+}
+
+select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1100px) {
+  .sortby {
+    width: 100%;
+  }
+  .sort-span {
+    display: none;
+  }
+}

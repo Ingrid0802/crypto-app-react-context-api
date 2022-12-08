@@ -1,0 +1,150 @@
+.list {
+  width: 80%;
+  margin: 1em auto;
+  align-items: center;
+  font-size: 1.2em;
+  min-height: 70vh;
+}
+
+.crypto-img {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+}
+
+table {
+  margin-top: 5em;
+  border-collapse: collapse;
+  height: 60%;
+  color: white;
+  width: 100%;
+}
+
+tr {
+  border: 1px solid rgb(48, 46, 46);
+}
+
+td {
+  text-align: center;
+  padding: 1em 0;
+  min-width: 30%;
+}
+
+th {
+  text-align: center;
+  padding: 0.5em 0;
+  min-width: 30%;
+  color: white;
+}
+
+thead {
+  background: #3b5a24;
+}
+
+p {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.crypto-green {
+  color: var(--positive-value);
+}
+
+.crypto-red {
+  color: var(--negative-value);
+}
+
+.crypto-white {
+  color: white;
+}
+
+.coin-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  table {
+    border-collapse: collapse;
+  }
+  table thead {
+    display: none;
+  }
+
+  td {
+    display: block;
+  }
+  td {
+    border: 1px solid rgb(48, 46, 46);
+  }
+
+  td:first-child {
+    background-color: #3b5a24;
+    color: white;
+    text-align: center;
+  }
+
+  td:nth-child(2)::before {
+    content: "Asset";
+  }
+
+  td:nth-child(3)::before {
+    content: "Name";
+  }
+
+  td:nth-child(4)::before {
+    content: "Price";
+  }
+
+  td:nth-child(5)::before {
+    content: "Total Volume";
+  }
+
+  td:nth-child(6)::before {
+    content: "Market Cap Change";
+  }
+
+  td:nth-child(7)::before {
+    content: "1H";
+  }
+
+  td:nth-child(8)::before {
+    content: "24H";
+  }
+
+  td:nth-child(9)::before {
+    content: "7D";
+  }
+
+  td {
+    text-align: right;
+    padding-right: 0.2em;
+  }
+
+  td::before {
+    padding-left: 0.2em;
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .crypto-img {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+    text-align: center;
+  }
+
+  .symbol {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    width: 100%;
+  }
+}
